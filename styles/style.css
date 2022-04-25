@@ -83,8 +83,18 @@ html {
   .welcome-section{
 
     height: 60vh;
+    padding: 10%;
+
   }
 
+}
+
+
+#welcome-profile{
+
+  padding-left:3%;
+  padding-right:3%;
+  text-align: center;
 }
 
 body {
@@ -126,6 +136,7 @@ img {
 
 p{
   font-size: 3rem;
+
 }
 
 .nav {
@@ -265,7 +276,7 @@ p{
   
 .btn {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   border-radius: 3px;
 }
   
@@ -301,6 +312,10 @@ p{
   background: var(--main-gray);
 }
 
+.profile-link{
+  padding: 0rem;
+}
+
 .contact-section, p {
 
   font-size: 2rem;
@@ -308,7 +323,7 @@ p{
 }
   
 .contact-section-header, h2 {
-  font-size: 5.5rem;
+  font-size: 7rem;
 }
 
 @media (max-width: 28.75em) {
@@ -316,8 +331,26 @@ p{
     font-size: 4rem;
   }
 }
+
+@media (max-width: 28.75em) {
+  .contact-section-header, p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 28.75em) {
+  .contact-links a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+  }
+}
   
 .contact-section-header, p {
+  font-size: 3rem;
   font-style: italic;
 }
 
@@ -331,7 +364,7 @@ p{
 }
   
 .contact-details {
-  font-size: 2.4rem;
+  font-size: 4rem;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
 }
@@ -358,6 +391,7 @@ footer i {
   footer {
     flex-direction: column;
     text-align: center;
+    font-size: 1rem;
 
   }
 
