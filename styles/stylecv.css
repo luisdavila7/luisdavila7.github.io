@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+html{
+
+  font-size: 16px;
+  background-color: white;
+
+}
+body {
+  min-width: 250px;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+}
+
+body p, li{
+  font-size: 1.2em;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 300px;
+  top: 0px;
+  left: 0px;
+  width: 390px;
+  border-color: black;
+  font-size: 1.5em;
+
+}
+
+header {
+  margin: 10px;
+  text-align: center;
+  font-size: 3em;
+  font-weight:bold;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 90%;
+  padding: 0;
+}
+
+#navbar li {
+  border-top: 0.5px solid;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: rgb(61, 51, 51);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 400px;
+  margin-right: 100px;
+  padding: 15px;
+  margin-bottom: 100px;
+}
+
+
+section li {
+  margin: 10px 0px 0px 15px;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 500px;
+  }
+
+  body p, li{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  body p, li{
+    font-size: 1em;
+  }
+}
+
+
+@media only screen and (max-width: 390px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  body p, li{
+    font-size: 1em;
+  }
+}
