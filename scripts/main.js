@@ -1,17 +1,17 @@
 // main.js — progressive-enhancement interactions shared by index.html and
 // curriculum.html. Everything here is additive: if this script fails to
-// load or run, the page is still fully usable and fully visible.
+// load or run, the page is still fully usable and fully visible. Content
+// is never hidden pending a script action — see CHANGELOG v1.2.0 for why
+// (a previous scroll-reveal version hid sections behind opacity:0 until
+// an IntersectionObserver callback restored them, which is exactly the
+// kind of "invisible until something else succeeds" pattern that isn't
+// worth the risk on a small static site).
 (function () {
   'use strict';
 
-  // Tag <html> so base.css knows it's safe to apply the .reveal hidden
-  // pending-state (see base.css) — without this, .reveal elements are
-  // just visible, no fade-in.
-  document.documentElement.classList.add('js-ready');
-
   document.addEventListener('DOMContentLoaded', function () {
     // Subtle nav shadow once the page has scrolled past the top.
-    var nav = document.querySelector('.nav, #navbar');
+    var nav = document.querySelector('.nav, .nav-sidebar');
     if (nav) {
       var onScroll = function () {
         nav.classList.toggle('is-scrolled', window.scrollY > 12);
@@ -20,42 +20,26 @@
       window.addEventListener('scroll', onScroll, { passive: true });
     }
 
-    // Close the mobile nav dropdown after a link is clicked (the toggle
-    // is a plain checkbox, so without this it would stay open until the
-    // user taps the hamburger again).
+    // Mobile nav toggle: close the dropdown after a link is clicked, and
+    // keep aria-expanded on the toggle label in sync with the checkbox
+    // for screen-reader users (the checkbox/label pair alone gives
+    // keyboard + visual behavior for free, but not the ARIA state).
     var navToggle = document.querySelector('.nav-toggle-checkbox');
+    var navLabel = document.querySelector('.nav-toggle-label');
     if (navToggle) {
-      document.querySelectorAll('.nav-list a, #navbar ul a').forEach(function (link) {
+      var syncExpanded = function () {
+        if (navLabel) {
+          navLabel.setAttribute('aria-expanded', navToggle.checked ? 'true' : 'false');
+        }
+      };
+      navToggle.addEventListener('change', syncExpanded);
+
+      document.querySelectorAll('.nav-list a, .sidebar-list a').forEach(function (link) {
         link.addEventListener('click', function () {
           navToggle.checked = false;
+          syncExpanded();
         });
       });
-    }
-
-    // Scroll-reveal for elements marked .reveal.
-    var revealEls = document.querySelectorAll('.reveal');
-    if (revealEls.length) {
-      if ('IntersectionObserver' in window) {
-        var observer = new IntersectionObserver(
-          function (entries) {
-            entries.forEach(function (entry) {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.15 }
-        );
-        revealEls.forEach(function (el) {
-          observer.observe(el);
-        });
-      } else {
-        // No IntersectionObserver support — just show everything.
-        revealEls.forEach(function (el) {
-          el.classList.add('is-visible');
-        });
-      }
     }
   });
 })();

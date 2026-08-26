@@ -2,6 +2,18 @@
 
 All notable changes to this site are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The current version is also shown in the footer of every page.
 
+## v1.2.0 — 2026-08-26
+
+### Fixed
+- **Highlights and Projects sections were invisible.** Root cause: v1.1.0's scroll-reveal system hid `.reveal` elements at `opacity:0` the instant JS ran, and relied entirely on an `IntersectionObserver` callback to ever reveal them again — a fragile "hidden until something else succeeds" pattern. Removed it outright rather than patching it: content is now simply always visible, no JS-gated hidden state, so this class of bug can't recur. The hamburger nav, nav-scroll shadow, bold hero, and grayscale-hover project images from v1.1.0 are unaffected and unchanged.
+- Mobile nav toggle was unreachable by keyboard (the checkbox was `display:none`, which removes it from the tab order entirely). Now visually hidden instead (off-screen, not display:none), so it's still focusable and operable via Tab + Space, with a visible focus ring and `aria-expanded`/`aria-controls` kept in sync via `scripts/main.js`.
+
+### Changed — architecture cleanup
+- **Unified `styles/base.css` + `styles/styles.css` + `styles/stylecv.css` into a single `styles/main.css`.** While merging, found and fixed a real landmine: both pages used `id="navbar"` for two structurally different nav components (index's top bar vs. curriculum's sidebar), which would have collided in one shared file. Fixed by driving curriculum's nav from a `.nav-sidebar` class instead of the id.
+- Removed `_config.yml` (set an unused `jekyll-theme-tactile` theme — neither page has Jekyll front matter, so it was never actually applied) and added `.nojekyll` so GitHub Pages serves the site as plain static files instead of running it through an unnecessary Jekyll build.
+- Deleted 24 unused files from `media/`: the 8 tech-logo icons made obsolete by the v1.0.0 chip redesign, plus 16 files (old alternate logos, a few completely unrelated leftover images) that were never referenced by any version of this site. Kept only the 7 files actually in use.
+- Removed the dead `project-tile` class (never had a matching CSS rule) from the 6 project cards on `index.html`.
+
 ## v1.1.0 — 2026-08-26
 
 ### Fixed
