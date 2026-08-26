@@ -1,7 +1,8 @@
 /*
   base.css — shared design system for luisdavila7.github.io
-  v1.0.0 — elegant minimalist redesign: white/paper background,
-  slate-navy accent, Space Grotesk + Inter typography.
+  Elegant minimalist theme: white/paper background, slate-navy accent,
+  Space Grotesk + Inter typography, CSS-only mobile nav toggle, and the
+  scroll-reveal utility used with scripts/main.js.
   Loaded by both styles.css (landing page) and stylecv.css (résumé page).
 */
 
@@ -99,6 +100,69 @@ img {
 .btn-outline:hover {
   border-color: var(--ink);
   background: var(--accent-soft);
+}
+
+/* Shared mobile nav toggle (CSS-only checkbox hack — works with JS off).
+   Hidden on desktop; each page's stylesheet reveals it under its own
+   nav breakpoint and defines what the checked state shows/hides. */
+.nav-toggle-checkbox {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.nav-toggle-label span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--ink);
+  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Scroll-reveal (progressive enhancement): elements only get the hidden
+   pending-state once main.js has run and tagged <html>. With JS off,
+   .reveal elements are simply visible immediately, no hidden state ever
+   applies.
+   Note: only opacity/transform *values* live here — each element that
+   uses .reveal defines its own `transition` (including opacity/transform)
+   at its normal specificity, so this never fights a page-specific
+   transition (e.g. a hover effect) declared on the same element. */
+html.js-ready .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+/* No html.js-ready guard needed here — .is-visible is only ever added by
+   JS, so it can never appear without js-ready also being set. Keeping
+   this rule's specificity equal to (rather than higher than) a plain
+   ".foo:hover" rule lets page-specific hover transforms declared later
+   in the cascade (e.g. .project:hover) win by source order instead of
+   being silently overridden. */
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Shared footer + version indicator, used on every page */

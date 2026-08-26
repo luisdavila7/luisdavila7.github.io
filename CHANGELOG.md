@@ -2,6 +2,23 @@
 
 All notable changes to this site are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The current version is also shown in the footer of every page.
 
+## v1.1.0 — 2026-08-26
+
+### Fixed
+- Mobile nav bug: the fixed top nav on `index.html` wrapped across multiple lines on narrow phones (brand + 5 links), growing taller than the hero's fixed top padding and covering the eyebrow/name text. Root cause fixed, not padded around: the link list now collapses behind a hamburger toggle below 61.25em instead of wrapping.
+
+### Added
+- `scripts/main.js` — the site's first JavaScript, written as progressive enhancement (everything stays fully visible/usable with JS off):
+  - CSS-only hamburger menu (checkbox pattern, no JS dependency for the toggle itself) replacing the wrapping mobile link list on both `index.html`'s top nav and `curriculum.html`'s sidebar nav.
+  - Subtle nav shadow once the page is scrolled.
+  - Scroll-reveal fade/rise-in for highlights, project cards (staggered), and the contact section, via `IntersectionObserver`.
+- Soft radial-gradient glow behind the hero name (`#welcome-section::before`), replacing the flat background.
+- Grayscale-by-default / full-color-on-hover treatment on project screenshots, so six visually unrelated images read as one curated set.
+
+### Changed
+- Hero name size increased (6.4rem → 8rem) with tighter line-height for a more confident, less "safe" hero.
+- `curriculum.html`'s mobile nav also collapses behind the same hamburger pattern instead of stacking all 8 links inline above the résumé.
+
 ## v1.0.0 — 2026-08-25
 
 Full visual redesign — the site's first "real" design system, replacing the original dark-navy/orange template look with an elegant, minimalist white/gray system. Content is unchanged; this is a visual-only pass.

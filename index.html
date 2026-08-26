@@ -15,10 +15,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="./scripts/main.js" defer></script>
 </head>
 <body>
   <nav id="navbar" class="nav">
     <a href="#welcome-section" class="nav-brand">Luis Davila</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </label>
     <ul class="nav-list">
       <li>
         <a href="#welcome-section">About</a>
@@ -63,19 +68,19 @@
 
     <section id="highlights" class="highlights-section">
         <div class="highlights-grid">
-            <div class="highlight-stat">
+            <div class="highlight-stat reveal">
                 <span class="highlight-number">1,000+ users</span>
                 <span class="highlight-label">Enterprise POS rollouts generating $1M+/month in sales</span>
             </div>
-            <div class="highlight-stat">
+            <div class="highlight-stat reveal">
                 <span class="highlight-number">$300K+</span>
                 <span class="highlight-label">Annual PMO budgets managed end-to-end</span>
             </div>
-            <div class="highlight-stat">
+            <div class="highlight-stat reveal">
                 <span class="highlight-number">AI-Powered</span>
                 <span class="highlight-label">Pioneered AI agent adoption to boost team productivity</span>
             </div>
-            <div class="highlight-stat">
+            <div class="highlight-stat reveal">
                 <span class="highlight-number">15 years</span>
                 <span class="highlight-label">Bridging engineering and product leadership</span>
             </div>
@@ -83,13 +88,13 @@
     </section>
 
     <section id="projects" class="projects-section">
-        <h2 class="projects-section-header">Engineering projects that keep my technical edge sharp</h2>
+        <h2 class="projects-section-header reveal">Engineering projects that keep my technical edge sharp</h2>
         <div class="projects-grid">
             <a
             href="https://github.com/luisdavila7/ChatApplication_Ver1"
             target="_blank"
             rel="noopener noreferrer"
-            class="project project-tile" >
+            class="project project-tile reveal" >
             <img class="project-image"
             src="./media/chatAppGolang.png"
             alt="Golang P2P Chat App project screenshot"/>
@@ -99,7 +104,7 @@
             href="https://github.com/luisdavila7/ShadowJobs_Web"
             target="_blank"
             rel="noopener noreferrer"
-            class="project project-tile" >
+            class="project project-tile reveal" >
             <img class="project-image"
             src="./media/ShadowWeb.png"
             alt="Shadow Jobs Web project screenshot"/>
@@ -109,7 +114,7 @@
             href="https://github.com/luisdavila7/ShadowJobs"
             target="_blank"
             rel="noopener noreferrer"
-            class="project project-tile" >
+            class="project project-tile reveal" >
             <img class="project-image"
             src="./media/ShadowJobsApp.png"
             alt="Shadow Jobs Android App project screenshot"/>
@@ -119,7 +124,7 @@
                 href="https://github.com/luisdavila7/VGStoreMontreal"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="project project-tile">
+                class="project project-tile reveal">
                 <img
                 class="project-image"
                 src="./media/VGStorePC.png"
@@ -131,7 +136,7 @@
                 href="https://github.com/luisdavila7/MovieAPI_Front"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="project project-tile" >
+                class="project project-tile reveal" >
                 <img class="project-image"
                 src="./media/MovieApi.png"
                 alt="Razor API - Movie Rate project screenshot"/>
@@ -142,7 +147,7 @@
             href="https://codepen.io/luisdavila7/pen/Exweega"
             target="_blank"
             rel="noopener noreferrer"
-            class="project project-tile">
+            class="project project-tile reveal">
             <img class="project-image"
             src="./media/CDocumentacion.png"
             alt="C Documentation project screenshot"/>
@@ -160,11 +165,11 @@
     </section>
     <section id="contact" class="contact-section">
 
-        <div class="contact-section-header">
+        <div class="contact-section-header reveal">
             <h2>I am available to work.</h2>
             <p>You can contact me</p>
         </div>
-        <div class="contact-links">
+        <div class="contact-links reveal">
             <a
                 href="https://www.linkedin.com/in/luisdavilac/"
                 target="_blank"
@@ -206,7 +211,7 @@
     <p><i>I love coding and never stop learning</i></p>
     <p> Created by Luis Davila </p>
     <p>Montréal - Canada</p>
-    <p class="site-version">Site v1.0.0 · <a href="https://github.com/luisdavila7/luisdavila7.github.io/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">Changelog</a></p>
+    <p class="site-version">Site v1.1.0 · <a href="https://github.com/luisdavila7/luisdavila7.github.io/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">Changelog</a></p>
     </footer>
 </body>
 </html>

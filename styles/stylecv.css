@@ -132,11 +132,42 @@ section li {
 
 @media only screen and (max-width: 815px) {
   #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     height: auto;
     position: relative;
     width: 100%;
+    padding: 0 2rem;
     border-right: none;
     border-bottom: 1px solid var(--line);
+    transition: box-shadow 0.2s ease-out;
+  }
+
+  #navbar.is-scrolled {
+    box-shadow: 0 1px 16px rgba(20, 22, 26, 0.06);
+  }
+
+  #navbar header {
+    margin: 1.2rem 0;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+  }
+
+  /* Collapse the link list behind the hamburger toggle instead of
+     stacking all 8 links inline above the résumé content. */
+  #navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 1rem;
+  }
+
+  .nav-toggle-checkbox:checked ~ ul {
+    display: flex;
   }
 
   #main-doc {
