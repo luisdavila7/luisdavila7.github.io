@@ -60,6 +60,16 @@
   font-style: italic;
 }
 
+#role-tagline {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-accent);
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+
 #welcome-profile {
   padding-left: 3%;
   padding-right: 3%;
@@ -121,6 +131,10 @@
 
   #icon-tecnologies {
     gap: 2rem;
+  }
+
+  #role-tagline {
+    font-size: 1.4rem;
   }
 
   #welcome-profile {

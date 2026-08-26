@@ -2,6 +2,15 @@
 
 All notable changes to this site are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The current version is also shown in the footer of every page.
 
+## v0.4.0 — 2026-08-25
+
+Content update to `index.html`'s hero section, aligning it with the new role positioning introduced in v0.3.0.
+
+### Changed
+- Replaced the hero summary paragraph (previously "Computer Systems Engineering and Programmer-Analyst...") with a concise Product Owner / IT Project Manager positioning statement.
+- Added a new role tagline line ("Product Owner · IT Implementation Lead · IT Project Manager") under the hero heading, styled via new `#role-tagline` rule in `styles/styles.css`.
+- Updated `<title>`, meta description, and Open Graph tags on `index.html` to match the new positioning.
+
 ## v0.3.0 — 2026-08-25
 
 Content update to `curriculum.html`, brought up to date with the current LinkedIn profile.
