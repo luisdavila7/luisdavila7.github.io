@@ -1,21 +1,21 @@
 /*
   base.css — shared design system for luisdavila7.github.io
-  Loaded by both styles.css (landing page) and stylecv.css (résumé page)
-  so the two pages share one color palette, one type system and the
-  same nav/footer/button components. Page-specific layout stays in
-  styles.css / stylecv.css.
+  v1.0.0 — elegant minimalist redesign: white/paper background,
+  slate-navy accent, Space Grotesk + Inter typography.
+  Loaded by both styles.css (landing page) and stylecv.css (résumé page).
 */
 
 :root {
-  --color-bg: #0d0d29;
-  --color-bg-alt: #303841;
-  --color-bg-gradient-start: #737577;
-  --color-text: #f5f5f7;
-  --color-text-muted: #c9c9d1;
-  --color-accent: #bf3605;
+  --paper: #fafaf8;
+  --surface: #ffffff;
+  --ink: #14161a;
+  --muted: #6b7280;
+  --line: #e4e4e7;
+  --accent: #33415c;
+  --accent-soft: #eef1f5;
 
-  --font-display: 'Permanent Marker', cursive;
-  --font-body: 'Raleway', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
 }
 
 *,
@@ -35,9 +35,9 @@ body {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 1.5;
-  background-color: var(--color-bg);
-  color: var(--color-text);
+  line-height: 1.6;
+  background-color: var(--paper);
+  color: var(--ink);
 }
 
 ul {
@@ -45,7 +45,7 @@ ul {
 }
 
 a {
-  color: var(--color-text);
+  color: var(--ink);
   text-decoration: none;
 }
 
@@ -55,23 +55,50 @@ img {
 }
 
 /* Shared nav link behavior (top bar on the landing page, sidebar on the résumé page) */
-.nav a,
+.nav-list a,
 .nav-link {
-  color: var(--color-text);
+  color: var(--muted);
+  font-weight: 500;
   transition: color 0.2s ease-out;
 }
 
-.nav a:hover,
+.nav-list a:hover,
 .nav-link:hover {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 /* Shared buttons */
 .btn {
   display: inline-block;
-  padding: 1rem 2.5rem;
-  border-radius: 4px;
+  padding: 1.1rem 2.6rem;
+  border-radius: 999px;
   font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.01em;
+  transition: all 0.2s ease-out;
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--surface);
+  border: 1px solid var(--ink);
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.btn-outline:hover {
+  border-color: var(--ink);
+  background: var(--accent-soft);
 }
 
 /* Shared footer + version indicator, used on every page */
@@ -81,19 +108,21 @@ img {
   gap: 0.6rem;
   align-items: center;
   text-align: center;
-  font-weight: 300;
-  padding: 2.5rem 1.5rem;
-  background: var(--color-bg-alt);
-  color: var(--color-text-muted);
+  font-weight: 400;
+  padding: 3rem 1.5rem;
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 1.3rem;
 }
 
 .site-version {
-  font-size: 1.3rem;
-  color: var(--color-text-muted);
+  font-size: 1.2rem;
+  color: var(--muted);
 }
 
 .site-version a {
-  color: var(--color-accent);
+  color: var(--accent);
 }
 
 .site-version a:hover {

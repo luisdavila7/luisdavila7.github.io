@@ -2,6 +2,20 @@
 
 All notable changes to this site are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The current version is also shown in the footer of every page.
 
+## v1.0.0 — 2026-08-25
+
+Full visual redesign — the site's first "real" design system, replacing the original dark-navy/orange template look with an elegant, minimalist white/gray system. Content is unchanged; this is a visual-only pass.
+
+### Changed
+- New color palette across both pages: warm off-white background (`--paper`), white surfaces, near-black ink text, slate-gray muted text, hairline gray borders, and a single deep slate-navy accent (`--accent`) used sparingly for links, buttons, and highlight numbers — replacing the dark navy background and orange/red accent.
+- New typography: **Space Grotesk** for headings/display text and **Inter** for body text, replacing the handwritten "Permanent Marker" display font and Raleway/Source Code Pro mix.
+- `index.html` hero rebuilt: small uppercase "eyebrow" role label, the name itself as the large display heading (replacing "Welcome, I'm Luis"), two new call-to-action buttons ("View Résumé", "Contact Me"), and a minimal top nav (transparent/blurred hairline bar with a name brand mark) replacing the filled dark nav bar.
+- Tech-stack row: replaced the 10 colorful logo images with minimal monochrome text chips (same technology list) — the raw logo colors clashed with the new light palette.
+- Projects grid restyled as white hairline-bordered cards with hover lift/shadow and a small arrow-on-hover affordance; dropped the decorative `<...>` code-bracket styling around project titles.
+- Highlights section, contact links, and footer restyled to match (pill-style outlined buttons, hairline dividers between stat columns on desktop).
+- `curriculum.html` restyled to the same system: white sidebar with a hairline border instead of a filled dark panel, refined section spacing and typography hierarchy; also wrapped the Skills list items in a proper `<ul>` (previously bare `<li>` elements with no list container).
+- `media/favicon.svg` recolored to match the new palette.
+
 ## v0.5.0 — 2026-08-25
 
 Reframed the homepage around the new Product Owner / IT PM positioning introduced in v0.4.0.
