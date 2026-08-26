@@ -2,6 +2,17 @@
 
 All notable changes to this site are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The current version is also shown in the footer of every page.
 
+## v0.5.0 — 2026-08-25
+
+Reframed the homepage around the new Product Owner / IT PM positioning introduced in v0.4.0.
+
+### Added
+- New "Highlights" section on `index.html` between the hero and the projects grid: four stat callouts pulled from the résumé (POS rollout scale, PMO budgets managed, AI agent adoption, years of experience), giving PM/product proof points top billing instead of only code repos. Added a matching "Highlights" nav link.
+- A caption line above the tech-icon row ("Engineering roots that inform every product decision") so the language icons read as supporting evidence of technical depth rather than a mismatched "this is my day job."
+
+### Changed
+- Projects section header retitled from "This is my portfolio of projects" to "Engineering projects that keep my technical edge sharp," framing it as supporting evidence rather than the main pitch.
+
 ## v0.4.0 — 2026-08-25
 
 Content update to `index.html`'s hero section, aligning it with the new role positioning introduced in v0.3.0.
