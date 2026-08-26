@@ -1,0 +1,5 @@
+# Claude Code local project/session data — not part of the site
+.claude/
+
+# Personal source documents used to update site content — never publish these
+*.pdf

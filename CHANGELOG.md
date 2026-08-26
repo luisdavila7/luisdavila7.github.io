@@ -2,6 +2,18 @@
 
 All notable changes to this site are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The current version is also shown in the footer of every page.
 
+## v0.3.0 — 2026-08-25
+
+Content update to `curriculum.html`, brought up to date with the current LinkedIn profile.
+
+### Changed
+- Headline, professional summary, and Languages proficiency levels updated.
+- Work Experience section fully replaced with the current role history (Aramark Canada, Tecsys Inc., Universidad del Sinú, Cámara de Comercio de Cartagena, Massy Energy, CB&I, SIIR Group), in reverse-chronological order.
+- Education: LaSalle AEC entry updated from in-progress to completed (2021–2023); institution names normalized.
+- Certifications list replaced.
+- Removed the exact street address from the public page, replaced with city/province only, now that the repository is public.
+- Added `.gitignore` (`.claude/`, `*.pdf`) so personal source documents used to prepare content updates are never committed.
+
 ## v0.2.1 — 2026-08-25
 
 Fixed image sizing/positioning bugs across the site.
