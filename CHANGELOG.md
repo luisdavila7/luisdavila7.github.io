@@ -2,6 +2,14 @@
 
 All notable changes to this site are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The current version is also shown in the footer of every page.
 
+## v0.2.1 — 2026-08-25
+
+Fixed image sizing/positioning bugs across the site.
+
+### Fixed
+- Tech-icon row (`#icon-tecnologies` / `.icon-profile`): the responsive breakpoints set each icon's width to 60%/58%/55% of the row, which meant only one giant icon fit per row on almost any screen ≤1200px wide (most laptops/tablets/phones) instead of a neat row of 10. Replaced with fixed sizes (6rem desktop, down to 4rem on mobile) and `object-fit: contain` so icons with different aspect ratios (square logos vs. the wide Node.js wordmark) render consistently, and switched the row to `justify-content: center` with a `gap` so it wraps cleanly at any width.
+- Project screenshots (`.project-image`): `height: calc(100% - 6.8rem)` was computed against `.project`, which has no explicit height — so the rule silently did nothing and each screenshot rendered at its own natural aspect ratio, leaving the "Razor API - Movie Rate" card visibly shorter than the rest. Replaced with a fixed height (`20rem`, `18rem` on the smallest breakpoint) so `object-fit: cover` actually crops every screenshot to the same size and the grid lines up.
+
 ## v0.2.0 — 2026-08-25
 
 First cleanup/unification pass over the existing site.

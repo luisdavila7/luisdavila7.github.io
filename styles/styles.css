@@ -68,21 +68,25 @@
 }
 
 .icon-profile {
-  width: 8%;
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
 }
 
 #icon-tecnologies {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 3rem;
   width: 90%;
   margin-top: 4%;
 }
 
 @media (max-width: 75em) {
   .icon-profile {
-    width: 60%;
+    width: 5rem;
+    height: 5rem;
   }
 
   #welcome-profile {
@@ -96,7 +100,8 @@
 
 @media (max-width: 61.25em) {
   .icon-profile {
-    width: 58%;
+    width: 4.5rem;
+    height: 4.5rem;
   }
 
   #welcome-profile {
@@ -110,7 +115,12 @@
 
 @media (max-width: 28.75em) {
   .icon-profile {
-    width: 55%;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #icon-tecnologies {
+    gap: 2rem;
   }
 
   #welcome-profile {
@@ -181,9 +191,15 @@
 }
 
 .project-image {
-  height: calc(100% - 6.8rem);
+  height: 20rem;
   width: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 30.625em) {
+  .project-image {
+    height: 18rem;
+  }
 }
 
 .project-title {
