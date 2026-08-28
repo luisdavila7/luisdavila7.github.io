@@ -517,7 +517,8 @@ img {
 .project-image {
   height: 18rem;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--paper);
   border-bottom: 1px solid var(--line);
   filter: grayscale(1) contrast(1.05);
   transition: filter 0.3s ease-out;
@@ -544,6 +545,48 @@ img {
   content: '\2197';
   color: var(--accent);
   margin-left: 0.6rem;
+}
+
+/* Dual-link project card: image opens the live app, a separate icon opens
+   the GitHub repo. Nested anchors aren't valid HTML, so this variant swaps
+   the outer `.project` from an <a> to a <div> and splits the two links. */
+.project-media-link {
+  display: block;
+}
+
+.project-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 0.8rem 0 2rem;
+}
+
+.project-footer .project-title {
+  padding: 1.8rem 0;
+}
+
+.project-repo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  color: var(--muted);
+  font-size: 1.6rem;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.project-repo-link:hover,
+.project-repo-link:focus-visible {
+  color: var(--accent);
+  background: var(--paper);
+}
+
+.project-repo-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .btn-show-all {

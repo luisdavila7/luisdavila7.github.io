@@ -2,6 +2,17 @@
 
 All notable changes to this site are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The current version is also shown in the footer of every page.
 
+## v1.3.1 — 2026-08-28
+
+### Fixed
+- Project screenshot thumbnails (`.project-image`) were visibly cropped. Root cause: the thumbnail box is a wide ~2:1 frame (`height: 18rem`, `width: 100%`), but every screenshot is near-square to mildly landscape (0.96–1.47 ratio); `object-fit: cover` scaled each image to fill that wide box, cropping the top/bottom heavily. Switched to `object-fit: contain` with a `var(--paper)` fill behind the image, so the full screenshot is always visible — any mismatch between a screenshot's ratio and the frame now shows as a subtle neutral margin instead of lost content.
+
+## v1.3.0 — 2026-08-28
+
+### Added
+- New "Delivery Certification Simulator" project card on `index.html`, added first in the grid (newest-first ordering). It's the first project card with two destinations instead of one: the screenshot opens the [live Vercel app](https://deliverycertificationsimulator.vercel.app/), and a small GitHub icon next to the title opens the [source repo](https://github.com/luisdavila7/Delivery_Cert_Simulator) separately.
+- New reusable `.project-dual` / `.project-media-link` / `.project-footer` / `.project-repo-link` styles in `styles/main.css` for this dual-link pattern, since nested `<a>` tags aren't valid HTML — the card is a `<div class="project">` with two independent anchors instead of one wrapping `<a>`. Existing single-link project cards are untouched.
+
 ## v1.2.0 — 2026-08-26
 
 ### Fixed
