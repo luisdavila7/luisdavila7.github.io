@@ -2,6 +2,13 @@
 
 All notable changes to this site are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The current version is also shown in the footer of every page.
 
+## v2.1.1 — 2026-11-17
+
+### Changed
+- **Hero intro (`index.html`):** Explicitly foregrounded `Computer Science Engineer` at the start of `#welcome-profile`.
+- **Capability Card 04 (`index.html`):** Updated the AI-first bullet to reflect designing AI-powered tools and business applications for operational challenges, and added `Aramark Canada` alongside `Collège LaSalle AEC · Systems Engineering`.
+- Bumped `.site-version` to `v2.1.1` on both `index.html` and `curriculum.html`.
+
 ## v2.1.0 — 2026-11-17
 
 ### Changed
