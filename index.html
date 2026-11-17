@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Davila - Product Owner | IT Project Manager - Personal Portfolio</title>
+    <title>Luis Davila — Product Owner · IT Implementation Lead · IT Project Manager</title>
     <meta name="description" content="Personal portfolio of Luis Davila, Product Owner and IT Project Manager based in Montréal, Canada, with 15 years of engineering-rooted IT experience.">
-    <meta property="og:title" content="Luis Davila - Personal Portfolio">
-    <meta property="og:description" content="Product Owner and IT Project Manager driving Digital Transformation with an AI-first mindset, backed by 15 years of engineering-rooted IT experience.">
+    <meta property="og:title" content="Luis Davila — Product Owner & IT Project Manager">
+    <meta property="og:description" content="Product Owner, IT Implementation Lead, and IT Project Manager driving Digital Transformation with an AI-first mindset, backed by 15 years of engineering-rooted IT experience.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://luisdavila7.github.io/">
     <link rel="icon" type="image/svg+xml" href="./media/favicon.svg">
@@ -14,227 +14,497 @@
     <script src="https://kit.fontawesome.com/2b3b4cb283.js" crossorigin="anonymous" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="./scripts/main.js" defer></script>
 </head>
 <body>
   <nav id="navbar" class="nav">
-    <a href="#welcome-section" class="nav-brand">Luis Davila</a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
-    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </label>
-    <ul class="nav-list" id="nav-menu">
-      <li>
-        <a href="#welcome-section">About</a>
-      </li>
-      <li>
-        <a href="#highlights">Highlights</a>
-      </li>
-      <li>
-        <a href="#projects">Work</a>
-      </li>
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
-      <li>
-        <a href="./curriculum.html">Curriculum</a>
-      </li>
-    </ul>
+    <div class="container nav-inner">
+      <a href="#welcome-section" class="nav-brand">
+        <span class="nav-brand-first">Luis</span> <span class="nav-brand-last">Davila</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <ul class="nav-list" id="nav-menu">
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="./curriculum.html">Résumé</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
   </nav>
-    <section id="welcome-section">
+
+  <section id="welcome-section">
+    <div class="container hero-grid">
+      <div class="hero-copy">
         <p class="eyebrow">Product Owner · IT Implementation Lead · IT Project Manager</p>
-        <h1>Luis Davila</h1>
-        <p id="welcome-profile">15 years turning ideas into impactful products. I bring an AI-first mindset to Digital Transformation and Technology Strategy — bridging real engineering roots as a Computer Science Engineer and Programmer-Analyst with product and project leadership.
-        </p>
+        <h1 class="display-xl">Turning complex ideas into <em class="display-accent">impactful</em> products.</h1>
+        <p id="welcome-profile">15 years of IT and engineering experience bridging real software foundations with Digital Transformation, Agile Product Ownership, and AI-first Technology Strategy — based in Montréal, Canada.</p>
         <div class="hero-actions">
-            <a href="./curriculum.html" class="btn btn-primary">View Résumé</a>
-            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          <a href="./curriculum.html" class="btn btn-primary">View Full Résumé</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
-        <p class="chip-caption">Engineering roots that inform every product decision</p>
-        <div class="chip-row" aria-label="Core technologies">
-            <span class="tech-chip">Java</span>
-            <span class="tech-chip">C#</span>
-            <span class="tech-chip">.NET</span>
-            <span class="tech-chip">C++</span>
-            <span class="tech-chip">Python</span>
-            <span class="tech-chip">JavaScript</span>
-            <span class="tech-chip">Go</span>
-            <span class="tech-chip">React</span>
-            <span class="tech-chip">Git</span>
-            <span class="tech-chip">Node.js</span>
+        <div class="hero-meta">
+          <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Montréal, QC, Canada</span>
+          <span><i class="fas fa-language" aria-hidden="true"></i> English · French · Spanish</span>
+          <span><i class="fas fa-certificate" aria-hidden="true"></i> PMI Member · AWS Cloud Practitioner</span>
         </div>
-    </section>
+      </div>
+      <div class="hero-media">
+        <div class="hero-portrait-wrap">
+          <div class="hero-portrait-frame">
+            <img
+              src="./media/luis-davila-portrait.jpg"
+              alt="Portrait of Luis Davila, Product Owner and IT Project Manager"
+              class="hero-portrait"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="highlights" class="highlights-section">
-        <div class="highlights-grid">
-            <div class="highlight-stat">
-                <span class="highlight-number">1,000+ users</span>
-                <span class="highlight-label">Enterprise POS rollouts generating $1M+/month in sales</span>
-            </div>
-            <div class="highlight-stat">
-                <span class="highlight-number">$300K+</span>
-                <span class="highlight-label">Annual PMO budgets managed end-to-end</span>
-            </div>
-            <div class="highlight-stat">
-                <span class="highlight-number">AI-Powered</span>
-                <span class="highlight-label">Pioneered AI agent adoption to boost team productivity</span>
-            </div>
-            <div class="highlight-stat">
-                <span class="highlight-number">15 years</span>
-                <span class="highlight-label">Bridging engineering and product leadership</span>
-            </div>
-        </div>
-    </section>
+  <section id="highlights" class="highlights-section" aria-label="Career impact highlights">
+    <div class="container highlights-grid">
+      <div class="highlight-stat">
+        <span class="highlight-number">15+ years</span>
+        <span class="highlight-label">Bridging Computer Science engineering, IT delivery, and product leadership.</span>
+      </div>
+      <div class="highlight-stat">
+        <span class="highlight-number">1,000+</span>
+        <span class="highlight-label">Users supported across enterprise POS rollouts generating $1M+/month in sales.</span>
+      </div>
+      <div class="highlight-stat">
+        <span class="highlight-number">$300K+</span>
+        <span class="highlight-label">Annual PMO &amp; startup acceleration budgets managed end-to-end.</span>
+      </div>
+      <div class="highlight-stat">
+        <span class="highlight-number">AI-First</span>
+        <span class="highlight-label">Pioneered AI-powered agents, prototypes, and business workflows in production.</span>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects" class="projects-section">
-        <h2 class="projects-section-header">Engineering projects that keep my technical edge sharp</h2>
-        <div class="projects-grid">
+  <section id="capabilities" class="capabilities-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">How I Deliver Value</p>
+        <h2 class="display-lg">Four pillars from strategy to production.</h2>
+        <p class="section-lead">Translating stakeholder vision into structured backlogs, disciplined execution, and measurable business adoption.</p>
+      </div>
+
+      <div class="capabilities-grid">
+        <article class="capability-card capability-card--featured">
+          <div>
+            <p class="capability-code"><i class="fas fa-compass" aria-hidden="true"></i> 01 / Product Ownership &amp; Agile Delivery</p>
+            <h3 class="capability-title">Product direction grounded in business outcomes and iterative delivery.</h3>
+            <ul class="capability-list">
+              <li>Product backlog ownership, prioritization, user stories, and acceptance criteria</li>
+              <li>Primary liaison between business stakeholders, clients, and engineering teams</li>
+              <li>Agile Scrum, Kanban, and Sprint Review facilitation in Azure DevOps &amp; Jira</li>
+              <li>Proof-of-concept demos and solution design that align scope with user value</li>
+            </ul>
+          </div>
+          <div class="capability-footer">
+            <a href="./curriculum.html#Work_Experience" class="link-editorial link-editorial--on-dark">Explore product leadership <span aria-hidden="true">&rarr;</span></a>
+            <span class="capability-sub">Aramark Canada · Cartagena Chamber of Commerce</span>
+          </div>
+        </article>
+
+        <article class="capability-card">
+          <div>
+            <p class="capability-code"><i class="fas fa-rocket" aria-hidden="true"></i> 02 / IT Implementation &amp; Rollouts</p>
+            <h3 class="capability-title">End-to-end enterprise deployments built for operational readiness.</h3>
+            <ul class="capability-list">
+              <li>Multi-client enterprise POS planning, system configuration, and go-live execution</li>
+              <li>Testing strategies: test planning, use cases, end-to-end validation, and defect triage</li>
+              <li>User training, knowledge transfer, and business continuity during transitions</li>
+              <li>SLA-driven incident resolution and code-level troubleshooting when needed</li>
+            </ul>
+          </div>
+          <div class="capability-footer">
+            <a href="./curriculum.html#Work_Experience" class="link-editorial">See implementation track record <span aria-hidden="true">&rarr;</span></a>
+            <span class="capability-sub">Aramark Canada · Tecsys Inc.</span>
+          </div>
+        </article>
+
+        <article class="capability-card">
+          <div>
+            <p class="capability-code"><i class="fas fa-chart-line" aria-hidden="true"></i> 03 / PMO, Portfolio &amp; Project Control</p>
+            <h3 class="capability-title">PMI-aligned governance across software and industrial megaprojects.</h3>
+            <ul class="capability-list">
+              <li>PMO leadership overseeing multi-project portfolios and startup accelerators</li>
+              <li>Scope, schedule, cost, resource, and risk control via MS Project &amp; Primavera P6</li>
+              <li>Critical path management and shutdown scheduling on $8B+ industrial expansion</li>
+              <li>Executive status reporting, compliance, and stakeholder communication</li>
+            </ul>
+          </div>
+          <div class="capability-footer">
+            <a href="./curriculum.html#Work_Experience" class="link-editorial">Review PMO &amp; planning history <span aria-hidden="true">&rarr;</span></a>
+            <span class="capability-sub">University of Sinú · Massy Energy · CB&amp;I</span>
+          </div>
+        </article>
+
+        <article class="capability-card">
+          <div>
+            <p class="capability-code"><i class="fas fa-microchip" aria-hidden="true"></i> 04 / AI-First &amp; Engineering Roots</p>
+            <h3 class="capability-title">Hands-on technical fluency that bridges business and architecture.</h3>
+            <ul class="capability-list">
+              <li>AI-powered agents, rapid prototypes, and automation to boost team productivity</li>
+              <li>Programming foundation in Java, C#, .NET, Python, JavaScript ES6, Go &amp; C/C++</li>
+              <li>Relational databases &amp; cloud tooling: SQL, Oracle, MySQL, AWS, Azure DevOps, Git</li>
+              <li>UML analysis, OOP, and full SDLC literacy from requirements to deployment</li>
+            </ul>
+          </div>
+          <div class="capability-footer">
+            <a href="#projects" class="link-editorial">View technical stack &amp; repositories <span aria-hidden="true">&rarr;</span></a>
+            <span class="capability-sub">Collège LaSalle AEC · Systems Engineering</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Proven Track Record</p>
+        <h2 class="display-lg">Built across enterprise IT, PMOs, and large-scale delivery.</h2>
+        <p class="section-lead">From leading enterprise POS transformations in Canada to directing PMO portfolios in Colombia and planning critical-path schedules on the Reficar Refinery expansion.</p>
+      </div>
+
+      <div class="authority-metrics">
+        <div class="authority-stat">
+          <span class="authority-number">15+</span>
+          <span class="authority-label">years in IT, engineering &amp; project delivery</span>
+        </div>
+        <div class="authority-stat">
+          <span class="authority-number">30+</span>
+          <span class="authority-label">startups &amp; digital products guided in PMO</span>
+        </div>
+        <div class="authority-stat">
+          <span class="authority-number">3</span>
+          <span class="authority-label">working languages: EN · FR · ES</span>
+        </div>
+        <div class="authority-stat">
+          <span class="authority-number">$8.01B</span>
+          <span class="authority-label">megaproject planning context at Reficar</span>
+        </div>
+      </div>
+
+      <div class="featured-exp-header">
+        <p class="eyebrow">Selected Roles</p>
+        <a href="./curriculum.html" class="link-editorial">View full résumé <span aria-hidden="true">&rarr;</span></a>
+      </div>
+
+      <div class="experience-cards">
+        <article class="experience-card">
+          <div>
+            <p class="experience-metric">$1M+/mo</p>
+            <p class="experience-meta">Oct 2023 – Present · Montréal, QC</p>
+            <h3 class="experience-org">Aramark Canada</h3>
+            <p class="experience-summary">IT Senior Business Analyst leading enterprise POS deployments for 1,000+ users, Agile backlogs, UAT, go-live readiness, and AI-powered agent adoption.</p>
+          </div>
+          <p class="experience-tags">POS · Agile · Azure DevOps · AI Agents</p>
+        </article>
+
+        <article class="experience-card">
+          <div>
+            <p class="experience-metric">SLA &amp; Code</p>
+            <p class="experience-meta">Jan 2023 – May 2023 · Canada</p>
+            <h3 class="experience-org">Tecsys Inc.</h3>
+            <p class="experience-summary">Technical Support Analyst resolving customer incidents across ServiceNow &amp; Jira while delivering Java, SQL, and Git patches and optimizations.</p>
+          </div>
+          <p class="experience-tags">ServiceNow · Jira · Java · SQL</p>
+        </article>
+
+        <article class="experience-card">
+          <div>
+            <p class="experience-metric">$300K / yr</p>
+            <p class="experience-meta">2016 – 2020 · Cartagena</p>
+            <h3 class="experience-org">PMO &amp; Product Manager</h3>
+            <p class="experience-summary">Directed PMOs at University of Sinú and Cartagena Chamber of Commerce, guiding 30+ startups and supervising .NET, web, and cloud deliveries.</p>
+          </div>
+          <p class="experience-tags">PMO · Scrum · .NET · AWS</p>
+        </article>
+
+        <article class="experience-card">
+          <div>
+            <p class="experience-metric">70M+ hrs</p>
+            <p class="experience-meta">2012 – 2016 · Cartagena</p>
+            <h3 class="experience-org">CB&amp;I &amp; Massy Energy</h3>
+            <p class="experience-summary">Project Planner / Delivery on the Reficar Oil Refinery expansion using Primavera P6, MS Project, critical path analysis, and client reporting.</p>
+          </div>
+          <p class="experience-tags">Primavera P6 · MS Project · PMI</p>
+        </article>
+      </div>
+
+      <div class="org-strip-wrap">
+        <p class="org-strip-label">Organizations &amp; Institutions</p>
+        <div class="org-strip" aria-label="Organizations and institutions">
+          <span class="org-wordmark">Aramark Canada</span>
+          <span class="org-wordmark">Tecsys Inc.</span>
+          <span class="org-wordmark">University of Sinú</span>
+          <span class="org-wordmark">Cartagena Chamber of Commerce</span>
+          <span class="org-wordmark">Massy Energy Colombia</span>
+          <span class="org-wordmark">CB&amp;I</span>
+          <span class="org-wordmark">SIIR Group</span>
+          <span class="org-wordmark">Collège LaSalle</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="process-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow eyebrow--on-dark">How I Work</p>
+        <h2 class="display-lg display-lg--on-dark">A disciplined process, not rigid dogma.</h2>
+        <p class="section-lead section-lead--on-dark">Whether leading an Agile product backlog, an enterprise rollout, or a PMO recovery, the same five principles keep teams aligned and shipping.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <p class="process-num">01</p>
+          <h3 class="process-title">Listen &amp; Align</h3>
+          <p class="process-desc">Engage clients, business owners, and technical teams early to uncover real operational needs.</p>
+        </div>
+        <div class="process-step">
+          <p class="process-num">02</p>
+          <h3 class="process-title">Analyze &amp; Scope</h3>
+          <p class="process-desc">Translate ambiguity into clear user stories, acceptance criteria, and measurable KPIs.</p>
+        </div>
+        <div class="process-step">
+          <p class="process-num">03</p>
+          <h3 class="process-title">Prioritize &amp; Plan</h3>
+          <p class="process-desc">Sequence the backlog, manage dependencies, and balance cost, timeline, and delivery risk.</p>
+        </div>
+        <div class="process-step">
+          <p class="process-num">04</p>
+          <h3 class="process-title">Build &amp; Validate</h3>
+          <p class="process-desc">Partner with developers on prototypes, system configuration, UAT, and end-to-end QA.</p>
+        </div>
+        <div class="process-step">
+          <p class="process-num">05</p>
+          <h3 class="process-title">Launch &amp; Adopt</h3>
+          <p class="process-desc">Lead go-live readiness, user training, and AI-assisted continuous improvement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Technical Edge</p>
+        <h2 class="display-lg">Engineering projects that keep my technical edge sharp.</h2>
+        <p class="section-lead">Hands-on software builds across web, mobile, APIs, and systems programming that inform every product and architecture decision I make.</p>
+      </div>
+
+      <div class="chip-row" aria-label="Core technologies and tools">
+        <span class="tech-chip">Java</span>
+        <span class="tech-chip">C# / .NET</span>
+        <span class="tech-chip">Python</span>
+        <span class="tech-chip">JavaScript ES6</span>
+        <span class="tech-chip">React</span>
+        <span class="tech-chip">Node.js</span>
+        <span class="tech-chip">Go</span>
+        <span class="tech-chip">C / C++</span>
+        <span class="tech-chip">SQL / Oracle</span>
+        <span class="tech-chip">Azure DevOps</span>
+        <span class="tech-chip">Jira</span>
+        <span class="tech-chip">AWS</span>
+        <span class="tech-chip">Git</span>
+      </div>
+
+      <details class="projects-disclosure">
+        <summary class="btn btn-primary projects-toggle">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <span>See my repository</span>
+          <i class="fas fa-chevron-down projects-toggle-icon" aria-hidden="true"></i>
+        </summary>
+
+        <div class="projects-panel">
+          <div class="projects-grid">
             <div class="project project-dual">
-                <a
+              <a
                 href="https://deliverycertificationsimulator.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project-media-link"
                 aria-label="Open Delivery Certification Simulator live app">
                 <img class="project-image"
-                src="./media/Delivery_Exam_Simulator.png"
-                alt="Delivery Certification Simulator project screenshot"/>
+                  src="./media/Delivery_Exam_Simulator.png"
+                  alt="Delivery Certification Simulator project screenshot"/>
+              </a>
+              <div class="project-footer">
+                <p class="project-title">Delivery Certification Simulator</p>
+                <a
+                  href="https://github.com/luisdavila7/Delivery_Cert_Simulator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-repo-link"
+                  aria-label="View Delivery Certification Simulator source code on GitHub">
+                  <i class="fab fa-github"></i>
                 </a>
-                <div class="project-footer">
-                    <p class="project-title">Delivery Certification Simulator</p>
-                    <a
-                    href="https://github.com/luisdavila7/Delivery_Cert_Simulator"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-repo-link"
-                    aria-label="View Delivery Certification Simulator source code on GitHub">
-                    <i class="fab fa-github"></i>
-                    </a>
-                </div>
+              </div>
             </div>
+
             <a
-            href="https://github.com/luisdavila7/ChatApplication_Ver1"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project" >
-            <img class="project-image"
-            src="./media/chatAppGolang.png"
-            alt="Golang P2P Chat App project screenshot"/>
-            <p class="project-title">Golang P2P Chat App</p>
+              href="https://github.com/luisdavila7/ChatApplication_Ver1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project">
+              <img class="project-image"
+                src="./media/chatAppGolang.png"
+                alt="Golang P2P Chat App project screenshot"/>
+              <p class="project-title">Golang P2P Chat App</p>
             </a>
+
             <a
-            href="https://github.com/luisdavila7/ShadowJobs_Web"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project" >
-            <img class="project-image"
-            src="./media/ShadowWeb.png"
-            alt="Shadow Jobs Web project screenshot"/>
-            <p class="project-title">Shadow Jobs Web</p>
+              href="https://github.com/luisdavila7/ShadowJobs_Web"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project">
+              <img class="project-image"
+                src="./media/ShadowWeb.png"
+                alt="Shadow Jobs Web project screenshot"/>
+              <p class="project-title">Shadow Jobs Web</p>
             </a>
+
             <a
-            href="https://github.com/luisdavila7/ShadowJobs"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project" >
-            <img class="project-image"
-            src="./media/ShadowJobsApp.png"
-            alt="Shadow Jobs Android App project screenshot"/>
-            <p class="project-title">Shadow Jobs Android App</p>
+              href="https://github.com/luisdavila7/ShadowJobs"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project">
+              <img class="project-image"
+                src="./media/ShadowJobsApp.png"
+                alt="Shadow Jobs Android App project screenshot"/>
+              <p class="project-title">Shadow Jobs Android App</p>
             </a>
+
             <a
-                href="https://github.com/luisdavila7/VGStoreMontreal"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project">
-                <img
-                class="project-image"
+              href="https://github.com/luisdavila7/VGStoreMontreal"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project">
+              <img class="project-image"
                 src="./media/VGStorePC.png"
                 alt="Video Games Store on C project screenshot"/>
-                <p class="project-title">Video Games Store on C</p>
+              <p class="project-title">Video Games Store on C</p>
             </a>
 
             <a
-                href="https://github.com/luisdavila7/MovieAPI_Front"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project" >
-                <img class="project-image"
+              href="https://github.com/luisdavila7/MovieAPI_Front"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project">
+              <img class="project-image"
                 src="./media/MovieApi.png"
                 alt="Razor API - Movie Rate project screenshot"/>
-                <p class="project-title">Razor API - Movie Rate</p>
+              <p class="project-title">Razor API - Movie Rate</p>
             </a>
 
             <a
-            href="https://codepen.io/luisdavila7/pen/Exweega"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project">
-            <img class="project-image"
-            src="./media/CDocumentacion.png"
-            alt="C Documentation project screenshot"/>
-            <p class="project-title">C Documentation</p>
+              href="https://codepen.io/luisdavila7/pen/Exweega"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project">
+              <img class="project-image"
+                src="./media/CDocumentacion.png"
+                alt="C Documentation project screenshot"/>
+              <p class="project-title">C Documentation</p>
+            </a>
+          </div>
+
+          <div class="projects-actions">
+            <a
+              href="https://github.com/luisdavila7"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener noreferrer">
+              Open full GitHub profile <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container contact-inner">
+      <p class="eyebrow">Contact</p>
+      <h2 class="display-xl">Let's build something <em class="display-accent">impactful.</em></h2>
+      <p class="contact-lead">Open to Product Owner, IT Implementation Lead, and IT Project Manager opportunities in Montréal and beyond.</p>
+      <div class="contact-links">
+        <a href="mailto:luisdavila7@gmail.com" class="contact-link">
+          <i class="fas fa-envelope" aria-hidden="true"></i> luisdavila7@gmail.com
         </a>
-
-        </div>
-        <a
-          href="https://github.com/luisdavila7"
-          class="btn btn-show-all"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Show all<i class="fab fa-github"></i>
+        <a href="https://www.linkedin.com/in/luisdavilac/" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
         </a>
-    </section>
-    <section id="contact" class="contact-section">
+        <a href="https://github.com/luisdavila7" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <i class="fab fa-github" aria-hidden="true"></i> GitHub
+        </a>
+        <a href="tel:+15142955887" class="contact-link">
+          <i class="fas fa-phone" aria-hidden="true"></i> +1 514-295-5887
+        </a>
+      </div>
+    </div>
+  </section>
 
-        <div class="contact-section-header">
-            <h2>I am available to work.</h2>
-            <p>You can contact me</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">
+            <span class="nav-brand-first">Luis</span> <span class="nav-brand-last">Davila</span>
+          </p>
+          <p class="footer-desc">Product Owner, IT Implementation Lead &amp; IT Project Manager driving AI-first Digital Transformation from Montréal, Canada.</p>
+          <p class="footer-motto">I love coding and never stop learning.</p>
         </div>
-        <div class="contact-links">
-            <a
-                href="https://www.linkedin.com/in/luisdavilac/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn contact-details">
-                <i class="fab fa-linkedin"></i>
-                Linkedin
-            </a>
-           <a
-                href="https://www.facebook.com/luisdavila7/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn contact-details">
-                <i class="fab fa-facebook-square"></i>
-                Facebook
-            </a>
-            <a
-                href="https://twitter.com/LuisDavilaC7"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn contact-details">
-                <i class="fab fa-twitter"></i>
-                Twitter
-            </a>
-            <a
-                href="mailto:luisdavila7@gmail.com"
-                class="btn contact-details">
-                <i class="fas fa-at"></i>
-                Send a mail
-            </a>
-            <a href="tel:+15142955887"
-               class="btn contact-details">
-                <i class="fas fa-mobile-alt"></i>
-                Call me
-            </a>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <p class="footer-col-title">Navigation</p>
+            <ul>
+              <li><a href="#welcome-section">About</a></li>
+              <li><a href="#capabilities">Capabilities</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#process">Process</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <p class="footer-col-title">Credentials</p>
+            <ul>
+              <li><a href="./curriculum.html">Full Résumé</a></li>
+              <li><a href="./curriculum.html#Education">Education</a></li>
+              <li><a href="./curriculum.html#Certifications">Certifications</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <p class="footer-col-title">Connect</p>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/luisdavilac/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/luisdavila7" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="mailto:luisdavila7@gmail.com">luisdavila7@gmail.com</a></li>
+              <li><a href="https://twitter.com/LuisDavilaC7" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+            </ul>
+          </div>
         </div>
-    </section>
-    <footer class="site-footer">
-    <p><i>I love coding and never stop learning</i></p>
-    <p> Created by Luis Davila </p>
-    <p>Montréal - Canada</p>
-    <p class="site-version">Site v1.3.1 · <a href="https://github.com/luisdavila7/luisdavila7.github.io/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">Changelog</a></p>
-    </footer>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Created by Luis Davila · Montréal, Canada</p>
+        <p class="site-version">Site v2.1.0 · <a href="https://github.com/luisdavila7/luisdavila7.github.io/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">Changelog</a></p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

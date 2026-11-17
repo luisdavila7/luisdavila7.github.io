@@ -34,7 +34,7 @@
       };
       navToggle.addEventListener('change', syncExpanded);
 
-      document.querySelectorAll('.nav-list a, .sidebar-list a').forEach(function (link) {
+      document.querySelectorAll('.nav-list a, .sidebar-list a, .nav-cta, .nav-brand').forEach(function (link) {
         link.addEventListener('click', function () {
           navToggle.checked = false;
           syncExpanded();

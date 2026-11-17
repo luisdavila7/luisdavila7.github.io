@@ -2,6 +2,33 @@
 
 All notable changes to this site are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The current version is also shown in the footer of every page.
 
+## v2.1.0 — 2026-11-17
+
+### Changed
+- **Translated Spanish employer names to English (`index.html`, `curriculum.html`):** Standardized `Universidad del Sinú` → `University of Sinú`, `Cámara de Comercio de Cartagena` → `Cartagena Chamber of Commerce`, and `Massy Energy Colombia S.A.S.` → `Massy Energy Colombia`.
+- **Reordered spoken languages (`index.html`, `curriculum.html`):** Updated display order to `English · French · Spanish` (`EN · FR · ES` in the metrics strip, and `English, French, Spanish` in `curriculum.html`).
+- **On-demand coding projects (`index.html`, `styles/main.css`):** Placed the 7 coding project cards inside a native HTML `<details>` disclosure collapsed by default behind a **"See my repository"** button directly below the languages/tools chip row, so technical screenshots don't dominate the initial scroll.
+- **Restyled Organizations strip (`index.html`, `styles/main.css`):** Replaced the larger serif wordmarks with compact Inter sans-serif pill tags (`1.25rem`) under an `Organizations & Institutions` label.
+- **Visual differentiation touches (`index.html`, `styles/main.css`):** Added a cerulean left accent rule on the hero intro and offset slate backdrop on the portrait, updated Capabilities cards to `01 /`–`04 /` numbered labels with icons and a top hover bar, and added domain/stack tags to Selected Roles cards.
+- Bumped `.site-version` to `v2.1.0` in both pages.
+
+## v2.0.0 — 2026-11-17
+
+Major visual and structural redesign across both `index.html` and `curriculum.html`, adopting a cool navy, ice-slate, and cerulean editorial theme.
+
+### Added
+- `media/luis-davila-portrait.jpg`: LinkedIn studio portrait added to the Hero (`4:5` rounded editorial frame) on `index.html` and the résumé header on `curriculum.html`.
+- New "Capabilities" section (`#capabilities`) on `index.html`: 2×2 editorial grid (Card A featured in deep navy `#143a5c`, Cards B–D in crisp white) summarizing Product Ownership, IT Implementation, PMO & Project Control, and AI-First / Engineering Roots.
+- New "Experience" authority section (`#experience`) on `index.html`: 4 key metrics, 4 role highlight cards (Aramark Canada, Tecsys Inc., PMO & Product Manager roles, CB&I & Massy Energy Reficar), and an organization wordmark strip linking to `curriculum.html`.
+- New "Process" section (`#process`) on `index.html`: full-bleed deep navy 5-step delivery workflow (`01 Listen & Align` through `05 Launch & Adopt`).
+- Editorial 3-column footer on `index.html` with navigation, credentials, and connect links.
+
+### Changed
+- **Color palette (`styles/main.css` & `media/favicon.svg`):** Replaced the warm off-white/slate-navy theme with `#ffffff` (`--paper`), `#edf1f5` (`--cream` alternating bands), `#143a5c` (`--ink`), `#1f6e8c` (`--accent`), `#a9cedf` (`--accent-soft`), `#44596e` (`--muted`), and `#d8e0e8` (`--line`).
+- **Typography:** Switched display font from Space Grotesk to **Fraunces** (light/italic editorial serif) paired with **Inter** for body copy and tracked uppercase eyebrows.
+- **Sticky nav (`index.html`):** Updated with a two-tone `Luis Davila` wordmark and a `LET'S TALK` pill CTA while keeping the CSS-only accessible mobile toggle.
+- **`curriculum.html`:** Aligned the sidebar nav, résumé hero, and bullet lists (`.resume-bullets`) with the new Fraunces + Inter navy/ice-slate system, and bumped `.site-version` to `v2.0.0` on both pages.
+
 ## v1.3.1 — 2026-08-28
 
 ### Fixed
