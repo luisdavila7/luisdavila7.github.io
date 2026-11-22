@@ -2,6 +2,12 @@
 
 All notable changes to this site are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The current version is also shown in the footer of every page.
 
+## v2.1.3 — 2026-11-21
+
+### Changed
+- **Role positioning (`index.html`, `curriculum.html`):** Added `IT Forward Deployed Engineer` to the headline, SEO/OG metadata, hero eyebrow, sidebar subtitle, contact copy, and footer summary (`IT Implementation Lead | Technical Product Owner | IT Project Manager | IT Forward Deployed Engineer`).
+- Bumped `.site-version` to `v2.1.3` on both pages.
+
 ## v2.1.2 — 2026-11-21
 
 ### Changed
